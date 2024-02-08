@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Louis Bradshaw</title>
+
+        <style>
+            #main {
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+            body { 
+                max-width: 650px;
+                line-height: 1.2;
+                font-size: 16px;
+                margin: 0 auto;
+            }
+            p, li {
+                overflow-wrap: break-word;
+                word-wrap: break-word;
+                hyphens: auto;
+                text-align: justify;
+            }
+            p {
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+            }
+            h4 {
+                margin-top: 2em; 
+            }
+            figcaption {
+                color: grey;
+            }
+            .email-reverse {
+                unicode-bidi: bidi-override;
+                direction: rtl;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <h3>Louis Bradshaw</h3>
+            <h5><a href="https://drive.google.com/file/d/1RMEZFuwBYVqbBX65mDDIvrIq1lT1xr-K/view?usp=sharing">CV</a> 
+                / <a href="https://github.com/loubbrad">GitHub</a> 
+                / <a href="https://twitter.com/loubbrad">Twitter</a>
+                <br><span class="email-reverse">moc [tod] kooltuo [ta] 91auol</span></h5>
+
+            <p>Hi! I'm a CS/ML PhD student specialising in Deep Learning. Prior to my PhD I studied Mathematics, focusing on Algebra and Geometry.
+                My research interests are varied, they include:
+            </p>
+
+            <ul>
+                <li><b>Generative Music</b>: I'm interested in deep learning based generative models 
+                    which are expressive, useful, and artistically interesting. My research has involved 
+                    training and aligning musical transformer models for this purpose (see the <a href="https://github.com/EleutherAI/aria">Aria</a> project).</li>
+                <li><b>Multimodal ML</b>: I'm investigating methods for integrating text and symbolic music (MIDI) with generative audio models. 
+                    More generally, I'm interested in ways to improve multimodal foundation models.</li>
+                <li><b>Natural Language Processing</b>: I spend a lot of time applying techniques originally developed in NLP, to generative music.
+                    As such I spend a lot of time engaging with NLP research, primarily focusing on alignment and RLHF.</li>
+                <li><b>Datasets and Evaluations</b>: In an effort to accelerate research in generative music, I'm interested in building large open source 
+                    music datasets. I research techniques for converting audio into symbolic data 
+                    (e.g. <a href="https://en.wikipedia.org/wiki/Transcription_(music)#Automatic_music_transcription">AMT</a>), 
+                    as well as how to combine techniques from each domain.</li>
+            </ul>
+
+            <h4>Aria Project</h4>
+
+            <div align="center">
+                <p>I currently run a research project on building, scaling, and aligning transformer models for symbolic music. The project 
+                    gets its codename, <i>Aria</i>, from the <a href="https://www.youtube.com/watch?v=p4yAB37wG5s">Goldberg Variations</a>, and has
+                    attracted generous funding and compute support from both EleutherAI & StabilityAI. Other than building a powerful foundation 
+                    model and personal artistic projects, my secondary aim is to build a generative compositional tool which is interesting and useful 
+                    to both novices and experts alike. Although this project is still a work in progress and hasn't been publicly released, here are 
+                    some early samples showcasing what it can do.</p>
+            
+            <div>
+              <figure style="text-align:center;display:inline-block">
+               <figcaption>
+               An original piece
+               </figcaption>
+               <audio controls=""><source src="assets/aria-mp3/smooth.mp3" type="audio/mpeg" /></audio>
+              </figure>
+              <figure style="text-align:center;display:inline-block">
+               <figcaption>
+               A continuation of a Mozart Sonata
+               </figcaption>
+               <audio controls=""><source src="assets/aria-mp3/mozart_sonata.mp3" type="audio/mpeg" /></audio>
+              </figure>
+              <figure style="text-align:center;display:inline-block">
+               <figcaption>
+               A jazzy continuation of a Chopin Nocturne
+               </figcaption>
+               <audio controls=""><source src="assets/aria-mp3/chopin_jazz.mp3" type="audio/mpeg" /></audio>
+              </figure>
+              <figure style="text-align:center;display:inline-block">
+               <figcaption>
+               A continuation of a Beethoven Sonata
+               </figcaption>
+               <audio controls=""><source src="assets/aria-mp3/beeth.mp3" type="audio/mpeg" /></audio>
+              </figure>
+            </div>
+                
+            <p>If you are interested finding out more about the Aria project, the best place is on the EleutherAI <a href="https://discord.com/invite/zBGx3azzUn">discord channel</a>.</p>
+
+            </div>
+            
+            <h4>Misc</h4>
+                
+            <p>These essays [
+                <a href="https://www.cs.virginia.edu/~robins/YouAndYourResearch.html">1</a>, 
+                <a href="https://www.arvindguptatoys.com/arvindgupta/mathsapology-hardy.pdf">2</a>] 
+                and these books [
+                <a href="https://en.wikipedia.org/wiki/Cannery_Row_(novel)">3</a>, 
+                <a href="https://en.wikipedia.org/wiki/Crime_and_Punishment">4</a>, 
+                <a href="https://en.wikipedia.org/wiki/Surely_You%27re_Joking,_Mr._Feynman!">5</a>] 
+                had a big influence on me.</p>
+        </div>
+    </body>
+</html>
