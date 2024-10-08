@@ -2,27 +2,33 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <title>Louis Bradshaw</title>
-
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
         <style>
+            body { 
+                max-width: 750px;
+                line-height: 1.2;
+                font-size: 16px;
+                margin: 0 auto;
+                font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            }
             #main {
                 margin-left: 10px;
                 margin-right: 10px;
                 margin-top: 40px;
                 margin-bottom: 40px;
             }
-            body { 
-                max-width: 650px;
-                line-height: 1.2;
-                font-size: 16px;
-                margin: 0 auto;
-            }
             p, li {
                 overflow-wrap: break-word;
                 word-wrap: break-word;
                 hyphens: auto;
                 text-align: justify;
+            }
+            li {
+            margin-bottom: 10px; /* Add space between list items */
+            }
+            li:last-child {
+                margin-bottom: 0; /* Remove margin from the last item */
             }
             p {
                 margin-top: 0.5em;
@@ -38,33 +44,48 @@
                 unicode-bidi: bidi-override;
                 direction: rtl;
             }
+            a {
+                color: #1772d0;
+                text-decoration: none;
+            }
+            a:focus, a:hover {
+                color: #f09228;
+                text-decoration: none;
+            }
         </style>
+
     </head>
     <body>
         <div id="main">
             <h3>Louis Bradshaw</h3>
-            <h5><a href="https://drive.google.com/file/d/1RMEZFuwBYVqbBX65mDDIvrIq1lT1xr-K/view?usp=sharing">CV</a> 
+            <h5><a href="https://drive.google.com/file/d/1RMEZFuwBYVqbBX65mDDIvrIq1lT1xr-K/view?usp=sharing">Curriculum Vitae</a> 
                 / <a href="https://github.com/loubbrad">GitHub</a> 
                 / <a href="https://twitter.com/loubbrad">Twitter</a>
-                <br><span class="email-reverse">moc [tod] kooltuo [ta] 91auol</span></h5>
+                <br><span class="email-reverse"> ku.ca.lumq@wahsdarb.b.l</span></h5>
 
-            <p>Hi! I'm a CS/ML PhD student specialising in Deep Learning. Prior to my PhD I studied Mathematics, focusing on Algebra and Geometry.
-                My research interests are varied, they include:
+            <p>I'm a CS/ML PhD student at <a href="https://www.c4dm.eecs.qmul.ac.uk/">C4DM</a>, where I specialize in Deep Learning for Music. I'm also a research lead at <a href="https://www.eleuther.ai/">EleutherAI</a>. Prior to my PhD I studied Mathematics, focusing on Algebra and Geometry.
+                My current research interests are varied and include:
             </p>
 
             <ul>
-                <li><b>Generative Music</b>: I'm interested in deep learning based generative models 
-                    which are expressive, useful, and artistically interesting. My research has involved 
-                    training and aligning musical transformer models for this purpose (see the <a href="https://github.com/EleutherAI/aria">Aria</a> project).</li>
-                <li><b>Multimodal ML</b>: I'm investigating methods for integrating text and symbolic music (MIDI) with generative audio models. 
-                    More generally, I'm interested in ways to improve multimodal foundation models.</li>
-                <li><b>Natural Language Processing</b>: I spend a lot of time applying techniques originally developed in NLP, to generative music.
-                    As such I spend a lot of time engaging with NLP research, primarily focusing on alignment and RLHF.</li>
-                <li><b>Datasets and Evaluations</b>: In an effort to accelerate research in generative music, I'm interested in building large open source 
-                    music datasets. I research techniques for converting audio into symbolic data 
-                    (e.g. <a href="https://en.wikipedia.org/wiki/Transcription_(music)#Automatic_music_transcription">AMT</a>), 
-                    as well as how to combine techniques from each domain.</li>
+                <li><b>Multimodal Foundation Models for Music</b>: My primary research focus is building deep learning based generative models 
+                    which are expressive, useful, and artistically interesting. My current research project (see the <a href="https://github.com/EleutherAI/aria">Aria</a> project), 
+                    which has attracted generous support from both StabilityAI & EleutherAI, 
+                    revolves around building a multimodal foundation model, incorporating both audio, e.g., musical recordings, and MIDI (symbolic, note-level information).
+                <li><b>Robustness in Audio-to-Seq Models</b>: 
+                    I'm interested in improving real-world usability of audio-to-seq models, such as those used for music transcription and speech recognition.
+                    I pioneered a semi-supervised approach to training music transcription models (see <a href="https://github.com/EleutherAI/aria-amt">Aria-AMT</a>), enabling audio-to-sequence models to utilize additional information learned from unsupervised data (e.g., note-level <i>tokens</i> without corresponding audio)
+                    when transcribing audio. This approach led to state-of-the-art results on the relevant benchmarks. Going forward, I am interested in applying similar techniques to other seq-to-seq problems.
+                <li><b>Datasets</b>: 
+                    My research into music transcription began in an effort to increase the amount (and quality) of data available for training symbolic music models.
+                    Using our transcription model, we created a dataset of realistic, expressive piano transcriptions, comprising over 100,000 hours of music, representing a 100-fold increase over pre-existing datasets.
             </ul>
+            
+            <p>
+                Outside of research, I'm extremely interested in the engineering problems surrounding ML/DL. In my non-research time, I currently dedicate a portion to learning C++/CUDA
+                and staying up-to-date with research in ML-infra. Personally speaking, I love mathematics, physics, music, reading, and painting. The best part of doing a PhD is getting to learn 
+                from all kinds of people. If you are interested in collaborating, or just chatting about research, feel free to reach out!
+            </p>
 
             <h4>Aria Project</h4>
 
@@ -85,7 +106,7 @@
               </figure>
               <figure style="text-align:center;display:inline-block">
                <figcaption>
-               A continuation of a Mozart Sonata
+                Jazz improvisation on Autumn Leaves
                </figcaption>
                <audio controls=""><source src="assets/aria-mp3/mozart_sonata.mp3" type="audio/mpeg" /></audio>
               </figure>
