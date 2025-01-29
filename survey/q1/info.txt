@@ -1,0 +1,4 @@
+Prompt continuation vs SOTA symbolic and audio music generation models
+
+Suno and MusicGen prompts: "Solo piano performance"
+Aria sampling params: metadata=True, top_p=0.95, temp=0.97
