@@ -6,11 +6,10 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
         <style>
             body { 
-                max-width: 750px;
+                max-width: 650px;
                 line-height: 1.2;
                 font-size: 16px;
                 margin: 0 auto;
-                font-family: 'Lato', Verdana, Helvetica, sans-serif;
             }
             #main {
                 margin-left: 10px;
@@ -46,7 +45,6 @@
                 direction: rtl;
             }
             a {
-                color: #1772d0;
                 text-decoration: none;
             }
             a:focus, a:hover {
@@ -62,41 +60,45 @@
             <h5><a href="https://drive.google.com/file/d/1RMEZFuwBYVqbBX65mDDIvrIq1lT1xr-K/view?usp=sharing">Curriculum Vitae</a> 
                 / <a href="https://github.com/loubbrad">GitHub</a> 
                 / <a href="https://twitter.com/loubbrad">Twitter</a>
-                <br><span class="email-reverse"> ku.ca.lumq@wahsdarb.b.l</span></h5>
+                <br><span>l.b.bradshaw [at] qmul.ac.uk</span></h5>
 
-            <p>I'm a CS/ML PhD student at <a href="https://www.c4dm.eecs.qmul.ac.uk/">C4DM</a>, where I specialize in Deep Learning for Music. I'm also a research lead at <a href="https://www.eleuther.ai/">EleutherAI</a>. Prior to my PhD I studied Mathematics, focusing on Algebra and Geometry.
-                My current research interests are varied and include:
+            <p>I'm a CS/ML PhD student at <a href="https://www.c4dm.eecs.qmul.ac.uk/">C4DM</a>, where I specialize in Deep Learning for Audio. I'm also a research lead at <a href="https://www.eleuther.ai/">EleutherAI</a>. 
+                Prior to my PhD, I studied Mathematics (Algebraic Geometry) at Imperial College London (BSc, MSc). My current research interests are varied and include:
             </p>
-
-            <ul>
-                <li><b>Multimodal Foundation Models for Music</b>: My primary research focus is building deep learning based generative models 
-                    which are expressive, useful, and artistically interesting. My current research project (see the <a href="https://github.com/EleutherAI/aria">Aria</a> project), 
-                    which has attracted generous support from both StabilityAI & EleutherAI, 
-                    revolves around building a multimodal foundation model, incorporating both audio, e.g., musical recordings, and MIDI (symbolic, note-level information).
-                <li><b>Robustness in Audio-to-Seq Models</b>: 
-                    I'm interested in improving real-world usability of audio-to-seq models, such as those used for music transcription and speech recognition.
-                    I pioneered a semi-supervised approach to training music transcription models (see <a href="https://github.com/EleutherAI/aria-amt">Aria-AMT</a>), enabling audio-to-sequence models to utilize additional information learned from unsupervised data (e.g., note-level <i>tokens</i> without corresponding audio)
-                    when transcribing audio. This approach led to state-of-the-art results on the relevant benchmarks. Going forward, I am interested in applying similar techniques to other seq-to-seq problems.
-                <li><b>Datasets</b>: 
-                    My research into music transcription began in an effort to increase the amount (and quality) of data available for training symbolic music models.
-                    Using our transcription model, we created a dataset of realistic, expressive piano transcriptions, comprising over 100,000 hours of music, representing a 100-fold increase over pre-existing datasets.
-            </ul>
+            <p><b>Deep Learning for Music</b>. I've led research projects in several core areas of generative music and information retrieval including: musical foundation models 
+            (see the <a href="https://github.com/EleutherAI/aria">Aria</a> project), self-supervised representation learning, audio transcription, and datasets. My current 
+            PhD research explores post-training techniques for pre-trained music models, aiming to improve quality control, enhance guidance and conditioning methods, and enabling applications to MIR via <i>transfer learning</i>.</p>
             
+            <p><b>Hybrid Audio/Language Models</b>. I've developed a growing research interest in models that integrate audio with text or other token-based symbolic information.
+                This includes areas such as neural audio codecs, automatic speech recognition, and audio-language models. I'm particularly interested in improving conversational 
+                speech foundation models (e.g., Moshi) through both architectural and data-centric approaches.</p>
             <p>
-                Outside of research, I'm extremely interested in the engineering problems surrounding ML/DL. In my non-research time, I currently dedicate a portion to learning C++/CUDA
-                and staying up-to-date with research in ML-infra. Personally speaking, I love mathematics, physics, music, reading, and painting. The best part of doing a PhD is getting to learn 
+                I'm also extremely interested in the engineering problems surrounding ML/DL. In my non-research time, I currently dedicate a portion to studying C++/CUDA.
+                Outside of research, I have a deep love for mathematics, music production, and reading. The best part of doing a PhD is getting to learn 
                 from all kinds of people. If you are interested in collaborating, or just chatting about research, feel free to reach out!
             </p>
+        
+            <h4>News</h4>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li>
+                <b>[Jan 2025]</b> My paper <a href="https://openreview.net/forum?id=X5hrhgndxW">Aria-MIDI: A Dataset of Piano MIDI Files</a> was accepted at ICLR 2025. Looking forward to meeting everyone in Singapore! 
+                </li> 
+                <li>
+                <b>[Jun 2024]</b> I've been made a research lead at EleutherAI, where I will continue leading our expansive research project on generative music. </li> 
+                </li>
+                <li>
+                <b>[Jan 2024]</b> Thanks to StabilityAI and EleutherAI, who have provided us with significant compute sponsorship (10k A100 hours) for the Aria project.
+                </li>
+            </ul>
 
             <h4>Aria Project</h4>
 
             <div align="center">
-                <p>I currently run a research project on building, scaling, and aligning transformer models for symbolic music. The project 
+                <p>I currently lead a research project on building and scaling a transformer-based foundation model for symbolic music. The project 
                     gets its codename, <i>Aria</i>, from the <a href="https://www.youtube.com/watch?v=p4yAB37wG5s">Goldberg Variations</a>, and has
-                    attracted generous funding and compute support from both EleutherAI & StabilityAI. Other than building a powerful foundation 
-                    model and personal artistic projects, my secondary aim is to build a generative compositional tool which is interesting and useful 
-                    to both novices and experts alike. Although this project is still a work in progress and hasn't been publicly released, here are 
-                    some early samples showcasing what it can do.</p>
+                    attracted generous and ongoing compute support from EleutherAI & StabilityAI. Although this project hasn't been publicly released 
+                    due to publication review requirements, we are very excited to share our work in May! In the meantime, here are some early samples showcasing 
+                    what it can do:</p>
             
             <div>
               <figure style="text-align:center;display:inline-block">
@@ -119,7 +121,7 @@
               </figure>
             </div>
                 
-            <p>If you are interested finding out more about the Aria project, the best place is on the EleutherAI <a href="https://discord.com/invite/zBGx3azzUn">discord channel</a>.</p>
+            <p>If you are interested in finding out more about the Aria project, the best place is on the EleutherAI <a href="https://discord.com/invite/zBGx3azzUn">discord channel</a>.</p>
 
             </div>
             
